@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="c41c4dbc-17a2-4ae0-96ac-3a620a3df616">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="combine3">
+        <node name="DeepSleep" position="12.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="Minutes Deep Sleep"/>
+        </node>
+        <node name="Legende" position="24.00,21.00" prototype="list.combine"/>
+        <node name="LightSleep" position="9.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="Minutes Light Sleep"/>
+        </node>
+        <node name="RemSleep" position="6.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="Minutes REM Sleep"/>
+        </node>
+        <node name="Sleep" position="6.00,18.00" prototype="list.combine"/>
+        <node name="TotalSleep" position="-2.00,9.00" prototype="data.lookup">
+            <port name="key" type="string" value="Minutes Asleep"/>
+        </node>
+        <node name="UI2" position="24.00,13.00" prototype="list.combine"/>
+        <node name="align1" position="1.00,14.00" prototype="corevector.align"/>
+        <node name="arc1" position="6.00,11.00" prototype="corevector.arc">
+            <port name="width" type="float" value="200.0"/>
+            <port name="height" type="float" value="200.0"/>
+            <port name="start_angle" type="float" value="-150.0"/>
+            <port name="degrees" type="float" value="40.0"/>
+        </node>
+        <node name="arc2" position="9.00,11.00" prototype="corevector.arc">
+            <port name="width" type="float" value="200.0"/>
+            <port name="height" type="float" value="200.0"/>
+            <port name="start_angle" type="float" value="-110.0"/>
+            <port name="degrees" type="float" value="40.0"/>
+        </node>
+        <node name="arc3" position="12.00,11.00" prototype="corevector.arc">
+            <port name="width" type="float" value="200.0"/>
+            <port name="height" type="float" value="200.0"/>
+            <port name="start_angle" type="float" value="-70.0"/>
+            <port name="degrees" type="float" value="40.0"/>
+        </node>
+        <node name="colorize1" position="6.00,13.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#08a5edff"/>
+        </node>
+        <node name="colorize2" position="9.00,13.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#355bedff"/>
+        </node>
+        <node name="colorize3" position="12.00,13.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#6a08edff"/>
+        </node>
+        <node name="colorize4" position="1.00,15.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#4ac862ff"/>
+            <port name="stroke" type="color" value="#000000fe"/>
+        </node>
+        <node name="colorize5" position="34.00,18.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#00a0ffff"/>
+        </node>
+        <node name="colorize6" position="41.00,18.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#0047dbed"/>
+        </node>
+        <node name="colorize7" position="41.00,14.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#7b00dbed"/>
+        </node>
+        <node name="colorize8" position="27.00,8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#2bbb1cff"/>
+        </node>
+        <node name="colorize9" position="34.00,10.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#0000002a"/>
+        </node>
+        <node name="combine3" position="17.00,24.00" prototype="list.combine"/>
+        <node name="count1" position="2.00,3.00" prototype="list.count"/>
+        <node name="divide1" position="-2.00,11.00" prototype="math.divide">
+            <port name="value2" type="float" value="3.5"/>
+        </node>
+        <node name="ellipse2" position="1.00,13.00" prototype="corevector.ellipse"/>
+        <node name="grid1" position="2.00,5.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="1"/>
+            <port name="rows" type="int" value="1"/>
+            <port name="width" type="float" value="6593.0"/>
+            <port name="height" type="float" value="3270.0"/>
+        </node>
+        <node name="grid2" position="34.00,6.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="1"/>
+            <port name="rows" type="int" value="6"/>
+            <port name="width" type="float" value="2301.0"/>
+            <port name="height" type="float" value="500.0"/>
+            <port name="position" type="point" value="1.00,-92.00"/>
+        </node>
+        <node name="import_csv1" position="9.00,-4.00" prototype="data.import_csv">
+            <port name="file" type="string" value="fitbit_sleep.csv"/>
+        </node>
+        <node name="lookup1" position="16.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="Night"/>
+        </node>
+        <node name="multiply1" position="6.00,9.00" prototype="math.multiply">
+            <port name="value2" type="float" value="2.0"/>
+        </node>
+        <node name="multiply3" position="9.00,9.00" prototype="math.multiply">
+            <port name="value2" type="float" value="2.0"/>
+        </node>
+        <node name="multiply4" position="12.00,9.00" prototype="math.multiply">
+            <port name="value2" type="float" value="2.0"/>
+        </node>
+        <node name="rect1" position="34.00,17.00" prototype="corevector.rect">
+            <port name="width" type="float" value="153.0"/>
+            <port name="height" type="float" value="57.0"/>
+            <port name="roundness" type="point" value="12.00,9.00"/>
+        </node>
+        <node name="rect2" position="41.00,17.00" prototype="corevector.rect">
+            <port name="width" type="float" value="153.0"/>
+            <port name="height" type="float" value="57.0"/>
+            <port name="roundness" type="point" value="12.00,9.00"/>
+        </node>
+        <node name="rect3" position="41.00,13.00" prototype="corevector.rect">
+            <port name="width" type="float" value="153.0"/>
+            <port name="height" type="float" value="57.0"/>
+            <port name="roundness" type="point" value="12.00,9.00"/>
+        </node>
+        <node name="rect4" position="27.00,7.00" prototype="corevector.rect">
+            <port name="width" type="float" value="153.0"/>
+            <port name="height" type="float" value="57.0"/>
+            <port name="roundness" type="point" value="12.00,9.00"/>
+        </node>
+        <node name="rect5" position="34.00,8.00" prototype="corevector.rect">
+            <port name="width" type="float" value="7006.0"/>
+            <port name="height" type="float" value="2.0"/>
+        </node>
+        <node name="reverse1" position="9.00,-2.00" prototype="list.reverse"/>
+        <node name="reverse2" position="38.00,4.00" prototype="list.reverse"/>
+        <node name="round1" position="-6.00,12.00" prototype="math.round"/>
+        <node name="round2" position="38.00,5.00" prototype="math.round"/>
+        <node name="sample1" position="38.00,3.00" prototype="math.sample">
+            <port name="amount" type="int" value="6"/>
+            <port name="end" type="float" value="500.0"/>
+        </node>
+        <node name="textpath1" position="23.00,8.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Sleep stages from June 2020"/>
+            <port name="font_name" type="string" value="Verdana Bold"/>
+            <port name="font_size" type="float" value="141.0"/>
+            <port name="position" type="point" value="-2266.00,-952.00"/>
+        </node>
+        <node name="textpath2" position="37.00,19.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="REM sleep (Min.)"/>
+            <port name="font_size" type="float" value="77.0"/>
+            <port name="position" type="point" value="-2788.00,487.00"/>
+        </node>
+        <node name="textpath3" position="44.00,15.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Deep sleep (Min.)"/>
+            <port name="font_size" type="float" value="77.0"/>
+            <port name="position" type="point" value="-2774.00,786.00"/>
+        </node>
+        <node name="textpath4" position="44.00,19.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Light sleep (Min.)"/>
+            <port name="font_size" type="float" value="77.0"/>
+            <port name="position" type="point" value="-2778.00,630.00"/>
+        </node>
+        <node name="textpath5" position="30.00,9.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Total sleep (Min.)"/>
+            <port name="font_size" type="float" value="77.0"/>
+            <port name="position" type="point" value="-2775.00,943.00"/>
+        </node>
+        <node name="textpath6" position="16.00,7.00" prototype="corevector.textpath">
+            <port name="font_size" type="float" value="49.0"/>
+        </node>
+        <node name="textpath7" position="38.00,8.00" prototype="corevector.textpath">
+            <port name="font_name" type="string" value="Verdana Bold"/>
+            <port name="font_size" type="float" value="38.0"/>
+        </node>
+        <node name="textpath9" position="-6.00,13.00" prototype="corevector.textpath">
+            <port name="font_size" type="float" value="31.0"/>
+        </node>
+        <node name="translate1" position="6.00,12.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,13.00"/>
+        </node>
+        <node name="translate10" position="38.00,9.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-3655.00,-131.00"/>
+        </node>
+        <node name="translate12" position="-6.00,14.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,75.00"/>
+        </node>
+        <node name="translate13" position="1.00,16.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,65.00"/>
+        </node>
+        <node name="translate2" position="9.00,12.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,13.00"/>
+        </node>
+        <node name="translate3" position="12.00,12.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,13.00"/>
+        </node>
+        <node name="translate4" position="34.00,19.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-3290.00,460.00"/>
+        </node>
+        <node name="translate5" position="41.00,19.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-3291.00,603.00"/>
+        </node>
+        <node name="translate6" position="41.00,15.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-3291.00,759.00"/>
+        </node>
+        <node name="translate7" position="27.00,9.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-3291.00,915.00"/>
+        </node>
+        <node name="translate8" position="16.00,9.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,-653.00"/>
+        </node>
+        <node name="translate9" position="34.00,9.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-28.00,-138.00"/>
+        </node>
+        <conn input="grid1.columns" output="count1"/>
+        <conn input="arc1.position" output="grid1"/>
+        <conn input="translate1.shape" output="arc1"/>
+        <conn input="colorize1.shape" output="translate1"/>
+        <conn input="arc2.position" output="grid1"/>
+        <conn input="translate2.shape" output="arc2"/>
+        <conn input="colorize2.shape" output="translate2"/>
+        <conn input="arc3.position" output="grid1"/>
+        <conn input="translate3.shape" output="arc3"/>
+        <conn input="colorize3.shape" output="translate3"/>
+        <conn input="arc1.width" output="multiply1"/>
+        <conn input="arc1.height" output="multiply1"/>
+        <conn input="arc2.width" output="multiply3"/>
+        <conn input="arc2.height" output="multiply3"/>
+        <conn input="arc3.width" output="multiply4"/>
+        <conn input="arc3.height" output="multiply4"/>
+        <conn input="ellipse2.width" output="divide1"/>
+        <conn input="ellipse2.height" output="divide1"/>
+        <conn input="align1.position" output="grid1"/>
+        <conn input="align1.shape" output="ellipse2"/>
+        <conn input="colorize4.shape" output="align1"/>
+        <conn input="Sleep.list1" output="colorize1"/>
+        <conn input="Sleep.list2" output="colorize2"/>
+        <conn input="Sleep.list3" output="colorize3"/>
+        <conn input="combine3.list1" output="Sleep"/>
+        <conn input="multiply1.value1" output="RemSleep"/>
+        <conn input="multiply3.value1" output="LightSleep"/>
+        <conn input="multiply4.value1" output="DeepSleep"/>
+        <conn input="divide1.value1" output="TotalSleep"/>
+        <conn input="colorize5.shape" output="rect1"/>
+        <conn input="translate4.shape" output="colorize5"/>
+        <conn input="colorize6.shape" output="rect2"/>
+        <conn input="translate5.shape" output="colorize6"/>
+        <conn input="colorize7.shape" output="rect3"/>
+        <conn input="translate6.shape" output="colorize7"/>
+        <conn input="colorize8.shape" output="rect4"/>
+        <conn input="translate7.shape" output="colorize8"/>
+        <conn input="combine3.list3" output="UI2"/>
+        <conn input="textpath6.text" output="lookup1"/>
+        <conn input="textpath6.position" output="grid1"/>
+        <conn input="reverse1.list" output="import_csv1"/>
+        <conn input="TotalSleep.list" output="reverse1"/>
+        <conn input="count1.list" output="reverse1"/>
+        <conn input="RemSleep.list" output="reverse1"/>
+        <conn input="LightSleep.list" output="reverse1"/>
+        <conn input="DeepSleep.list" output="reverse1"/>
+        <conn input="lookup1.list" output="reverse1"/>
+        <conn input="translate8.shape" output="textpath6"/>
+        <conn input="textpath9.position" output="grid1"/>
+        <conn input="translate12.shape" output="textpath9"/>
+        <conn input="Sleep.list5" output="translate12"/>
+        <conn input="translate13.shape" output="colorize4"/>
+        <conn input="Sleep.list4" output="translate13"/>
+        <conn input="round1.value" output="TotalSleep"/>
+        <conn input="textpath9.text" output="round1"/>
+        <conn input="UI2.list1" output="translate8"/>
+        <conn input="UI2.list3" output="textpath5"/>
+        <conn input="UI2.list2" output="translate7"/>
+        <conn input="rect5.position" output="grid2"/>
+        <conn input="translate9.shape" output="rect5"/>
+        <conn input="colorize9.shape" output="translate9"/>
+        <conn input="UI2.list7" output="colorize9"/>
+        <conn input="textpath7.position" output="grid2"/>
+        <conn input="translate10.shape" output="textpath7"/>
+        <conn input="UI2.list6" output="translate10"/>
+        <conn input="textpath7.text" output="round2"/>
+        <conn input="reverse2.list" output="sample1"/>
+        <conn input="round2.value" output="reverse2"/>
+        <conn input="combine3.list2" output="Legende"/>
+        <conn input="Legende.list1" output="translate4"/>
+        <conn input="Legende.list2" output="textpath2"/>
+        <conn input="Legende.list3" output="translate5"/>
+        <conn input="Legende.list4" output="textpath3"/>
+        <conn input="Legende.list5" output="translate6"/>
+        <conn input="Legende.list6" output="textpath4"/>
+        <conn input="UI2.list4" output="textpath1"/>
+    </node>
+</ndbx>

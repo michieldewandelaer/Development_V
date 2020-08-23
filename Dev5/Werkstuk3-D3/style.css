@@ -1,0 +1,136 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 48px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+svg {
+    border-radius: 20px;
+}
+
+.legende {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.red, .black {
+    width: 16px;
+    height: 16px;
+    box-shadow: 0 0 2px 0 rgba(41, 41, 41, .15);
+    margin: 0 16px 0 32px;
+}
+
+.red {
+    background: red;
+}
+
+.black {
+    background: #292929;
+}
+
+.small {
+    text-align: center;
+    font-size: 10px;
+}
+
+.cardContainer {
+    display: block;
+    width: 350px;
+    height: fit-content;
+    max-height: 800px;
+    overflow-y: hidden;
+    margin-left: 48px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 rgba(41, 41, 41, .15);
+}
+
+.card {
+    width: 100%;
+    overflow-y: scroll;
+    height: fit-content;
+    max-height: 800px;
+}
+
+.header {
+    margin: 0 16px;
+    border-bottom: 1px solid red;
+}
+
+.content {
+    margin: 0 16px 16px;
+}
+
+.info {
+    margin-bottom: 16px;
+}
+
+.info h5 {
+    font-size: 1em;
+    margin: 12px 0 4px;
+}
+
+.info div {
+    width: 100%;
+}
+
+.info div ol {
+    padding-inline-start: 30px;
+    margin: 8px 0;
+}
+
+.info div ol p {
+    font-size: 14px;
+    text-align: right;
+    color: red;
+    margin-top: 0;
+}
+
+.sphere {
+    fill: #f3f3f3;
+}
+
+.country {
+    fill: #292929;
+    stroke: #A1A1A1;
+    stroke-width: 0.2px;
+}
+
+.hasCircuit {
+    fill: red;
+    stroke: #292929;
+    stroke-width: 0.2px;
+}
+
+::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: #dadce0;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>F1 - data</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+</head>
+<body>
+    <div class="flex">
+        <div class="map">
+            <div id="map-svg"></div>
+<!--
+            <svg  width="960" height="500"></svg>
+-->
+            <div class="legende">
+                <div class="black"></div>
+                <p>Geen circuit</p>
+                <div class="red"></div>
+                <p>Circuit aanwezig</p>
+            </div>
+            <p class="small">scroll to zoom</p>
+        </div>
+        <div class="cardContainer">
+            <div class="card">
+                <div class="header">
+                    <h3 id="countryName">Geen land geselecteerd</h3>
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h5>Circuit(s):</h5>
+                        <div>
+                            <ol id="circuitName">
+
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5>Meest recente winnaar:</h5>
+                        <div>
+                            <ol id="recentWinner">
+
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5>snelste ronde:</h5>
+                        <div>
+                            <ol id="fastestLap">
+
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
